@@ -53,6 +53,15 @@ app.use('/api/news', require('./routes/news'));
 
 const PORT = process.env.PORT || 5000;
 
+// Host frontend in production
+const path = require('path');
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../frontend/dist')));
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../frontend', 'dist', 'index.html'));
+  });
+}
+
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`✓ Server running on http://localhost:${PORT}`);
 });

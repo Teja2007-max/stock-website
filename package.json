@@ -1,0 +1,9 @@
+{
+  "name": "stock-website",
+  "version": "1.0.0",
+  "description": "Stock website full stack deployment",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "NODE_ENV=production node backend/server.js"
+  }
+}
