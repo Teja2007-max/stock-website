@@ -14,8 +14,12 @@ app.use(cors({
       /^http:\/\/localhost:517[0-9]$/,
       /^http:\/\/127\.0\.0\.1:517[0-9]$/,
       /^http:\/\/192\.168\.56\.1:517[0-9]$/,
-      /^http:\/\/192\.168\.0\.100:517[0-9]$/
+      /^http:\/\/192\.168\.0\.\d+:517[0-9]$/,
+      /^https:\/\/stock-website.*\.vercel\.app$/,
     ];
+    // Also allow any origin set via CORS_ORIGIN env var
+    const envOrigin = process.env.CORS_ORIGIN;
+    if (envOrigin && origin === envOrigin) return callback(null, true);
     const isAllowed = allowedOriginPatterns.some((pattern) => pattern.test(origin));
     if (isAllowed) {
       callback(null, true);
