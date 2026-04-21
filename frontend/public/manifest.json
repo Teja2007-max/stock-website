@@ -1,0 +1,19 @@
+{
+  "name": "StockEdge — AI Stock Market Predictor",
+  "short_name": "StockEdge",
+  "description": "AI-powered stock market analysis, predictions, and portfolio tracking",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0e14",
+  "theme_color": "#3b82f6",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["finance", "business"]
+}

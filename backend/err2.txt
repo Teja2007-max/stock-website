@@ -1,0 +1,1 @@
+{"_id":"69cfbda0ec74a9cf7839a453","username":"test_teja3","email":"test_teja3@example.com","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5Y2ZiZGEwZWM3NGE5Y2Y3ODM5YTQ1MyIsImlhdCI6MTc3NTIyMjE3NiwiZXhwIjoxNzc3ODE0MTc2fQ.7IIGqqBLja-gJQG38-fsmgnuH-W0KK_6Sc3vBE6ARrU"}
